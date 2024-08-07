@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/rps-game.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body class="main-container">
+    
+    <div id="page-title">
+        <h1>Rock, Paper, Scissors!</h1>
+        <h2>Can You Beat the Computer?</h2>
+        <p>First to <strong>Three Points</strong> wins!</p>
+    </div>
+
+    <div id="game-display">
+        <h3 id="winnerDisplay" class="hidden">Congratulations, you Win!</h3>
+        <h3 id="roundDisplay">The computer Won this Round</h3>
+
+        <div>
+            <h3>Current Scores:</h3>
+            <h4>User: <span id="userScore">0</span> rounds</h4>
+            <h4>Computer: <span id="computerScore">0</span> rounds</h4>
+        </div>
+    </div>
+
+    <div id="game-controls">
+        <h3>Current Choice: <span id="userChoiceDisplay">Undecided</span></h3>
+
+        <div id="userChoices">
+            <input type="button" value="Rock">
+            <input type="button" value="Paper">
+            <input type="button" value="Scissors">
+        </div>
+        <button id="confirmChoice" class="hidden">Play Round</button>
+        <button id="resetBtn" class="hidden">Reset</button>
+    </div>
+
+    <h5 id="watermark">
+        Application Based on the Review DOM Manipulation by Building a Rock, Paper, Scissors Game course from <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#review-dom-manipulation-by-building-a-rock-paper-scissors-game">freeCodeCamp.org</a>. <br>
+    </h5>
+    <script src="../js/rps-game.js"></script>
+</body>
+</html>
