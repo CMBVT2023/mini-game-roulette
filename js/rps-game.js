@@ -1,3 +1,9 @@
+const returnBtn = document.getElementById('return');
+returnBtn.addEventListener('click', () => {
+    window.location.replace('../index.html')
+})
+
+
 class RockPaperScissors {
     constructor() {
         this._computerOptions = ['Rock', 'Paper', 'Scissors'];
@@ -31,15 +37,24 @@ class RockPaperScissors {
 
     // Loads all the default eventListeners for the webpage's elements.
     _loadEventListeners() {
-        let buttonList = this._userChoiceButtons.querySelectorAll('input');
+        let buttonList = this._userChoiceButtons.querySelectorAll('button');
         buttonList.forEach(button => {
             button.addEventListener('click', (e) => {
-                this._playerChoice = e.target.value;
-                this._loadChoices();
+                if (!e.target.value) {
+                    let button = e.target.parentElement;
+                    this._playerChoice = button.value;
+                    this._loadChoices();
+                } else {
+                    console.log(e.target.value)
+                    this._playerChoice = e.target.value;
+                    this._loadChoices();
+                }
             })
         })
 
         this._confirmChoiceBtn.addEventListener('click', this._playRound.bind(this));
+
+
     }
 
     // Sets the values of the player's choice and the computer's choice, and then displays the play round

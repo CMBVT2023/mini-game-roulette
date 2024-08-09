@@ -1,0 +1,29 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page-title {
+    text-align: center;
+}
+
+#user-choice-display {
+    text-align: center;
+}
+
+#game-scores {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+#gameButtons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+}

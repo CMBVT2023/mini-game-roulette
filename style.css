@@ -1,11 +1,38 @@
+:root {
+    --main-background-color: #7F7B82;
+    --secondary-background-color: #16DB93;
+    --outline-color: #797270;
+    --main-text-color: #EDE7E3;
+    --secondary-text-color: #172121;
+}
+
 html {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
 
+.main-container {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+a:link, a:visited {
+    color: var(--main-text-color);
+}
+
+a:hover {
+    color: var(--secondary-text-color);
+}
+
 .hidden {
     display: none;
+}
+
+.return-button:hover {
+    transform: scale(1.1);
+    color: var(--secondary-text-color);
+    cursor: pointer;
 }
 
 #watermark {
