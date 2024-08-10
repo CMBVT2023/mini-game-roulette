@@ -1,0 +1,26 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#userInputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#userInputs input {
+    width: 240px;
+}
+
+#madLib {
+    text-align: center;
+}
+
+#madLibDisplay {
+    text-align: start;
+}

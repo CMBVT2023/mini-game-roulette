@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,67 @@
     <link rel="stylesheet" href="../style.css">
     <title>MadLib Generator</title>
 </head>
+
 <body class="main-container">
     <!-- MadLib Template -->
     <!-- Today, my fabulous camp group went to a (an)
-____________ (adjective) amusement park. It was a
-fun park with lots of cool ____________ (plural noun)
+_______ _____ (adjective) amusement park. It was a
+fun park with lots of cool ________ ____ (plural noun)
 and enjoyable play structures. When we got there, my
 kind counselor shouted loudly, "Everybody off the
-____________ (noun)." We all pushed out in a terrible
+_______ _____ (noun)." We all pushed out in a terrible
 hurry. My counselor handed out yellow tickets, and
 we scurried in. I was so excited! I couldn't figure out
 what exciting thing to do first. I saw a scary roller
-coaster I really liked so, I ____________ (adverb) ran
+coaster I really liked so, I _______ _____ (adverb) ran
 over to get in the long line that had about
-____________ (number) people in it. When I finally
-got on the roller coaster I was ____________ (past
+_______ _____ (number) people in it. When I finally
+got on the roller coaster I was ______ ______ (past
 tense verb). In fact I was so nervous my two knees
-were knocking together. This was the ____________
+were knocking together. This was the _____ _______
 (-est adjective) ride I had ever been on! In about two
 minutes I heard the crank and grinding of the gears.
 That’s when the ride began! When I got to the bottom,
-I was a little ____________ (past tense verb) but I
+I was a little _______ _____ (past tense verb) but I
 was proud of myself. The rest of the day went
 ____________ (adverb). It was a(n) ____________
 (adjective) day at the fun park. -->
 
-<h2>MadLib Generator</h2>
+    <h2>MadLib Generator</h2>
+    <div id="userInputs">
+        <input type="text" placeholder="Enter an Adjective..." value="musty">
+        <input type="text" placeholder="Enter a Plural Noun..." value="passions">
+        <input type="text" placeholder="Enter a noun..." value="police">
+        <input type="text" placeholder="Enter an Adverb..." value="crossly">
+        <input type="text" placeholder="Enter a Number..." value="One">
+        <input type="text" placeholder="Enter a Past Tense Verb..." value="ran">
+        <input type="text" placeholder="Enter a -est Adjective..." value="quickest">
+        <input type="text" placeholder="Enter a Past Tense Verb..." value="jumped">
+        <input type="text" placeholder="Enter an Adverb..." value="eventually">
+        <input type="text" placeholder="Enter an Adjective..." value="amiable">
+        <button id="generateBtn">Generate MadLib</button>
+    </div>
+
+    <div id="madLib" class="hidden">
+        <p id="madLibDisplay">
+            <!-- Any with an inside of their tags needs to have a check to see if the string should start with a or an. -->
+            Today, my fabulous camp group went to <span></span> amusement park. <br>
+            It was a fun park with lots of cool <span></span> and enjoyable play structures. <br>
+            When we got there, my kind counselor shouted loudly, "Everybody off the <span></span>." <br> 
+            We all pushed out in a terrible hurry. My counselor handed out yellow tickets, and we scurried in. <br> 
+            I was so excited! I couldn't figure out what exciting thing to do first. I saw a scary roller coaster <br>
+            I really liked so, I <span></span> ran over to get in the long line that had about <span></span> people in it. <br>
+            When I finally got on the roller coaster I was <span></span>. In fact I was so nervous <br>
+            my two knees were knocking together. This was the <span></span> ride I had ever been on! <br>
+            In about two minutes I heard the crank and grinding of the gears. That's when the ride began! <br>
+            When I got to the bottom, I was a little <span></span> but I was proud of myself. <br>
+            The rest of the day went <span></span>. It was <span></span> day at the fun park.
+        </p>
+
+        <button id="clearBtn">Clear MadLib</button>
+    </div>
 
     <script src="../js/madlib-game.js"></script>
 </body>
+
 </html>
